@@ -1,0 +1,35 @@
+<h1 class="title">Создание дохода/расхода</h1>
+
+<form class="create-form">
+    <div class="form-group">
+        <select class="form-select" aria-label="Выберите тип" id="inputType">
+            <option value="expense" selected>Выберите категорию</option>
+            <option value="expense">Расходы</option>
+            <option value="income">Доходы</option>
+        </select>
+<!--        <input type="text" class="form-control" id="inputType" placeholder="Тип...">-->
+    </div>
+    <div class="form-group">
+<!--        <input type="text" class="form-control" id="inputCategory" placeholder="Категория...">-->
+        <select class="form-select" aria-label="Default select example" id="inputCategory">
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="inputCount" placeholder="Сумма в $...">
+        <div id="valueError" class="invalid-feedback">
+            Вам необходимо ввести сумму!
+        </div>
+        <div id="regexError" class="invalid-feedback">
+            Сумма не может содержать любые символы кроме цифр!
+        </div>
+    </div>
+
+    <div class="form-group">
+        <input type="date" class="form-control" id="inputDate" placeholder="Дата...">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="inputComment" placeholder="Комментарий...">
+    </div>
+    <button type="submit" class="btn btn-success" id="createOperation">Создать</button>
+    <button type="submit" class="btn btn-danger">Отмена</button>
+</form>

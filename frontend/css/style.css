@@ -1,0 +1,214 @@
+.sidebar {
+    width: 219px;
+}
+
+.form-control {
+    max-width: 397px;
+}
+
+body {
+    color: var(--bs-primary-text-emphasis);
+}
+
+h1 {
+    color: var(--bs-primary-text-emphasis);
+}
+
+.icon-link {
+    font-size: 14px;
+    color: var(--bs-primary-text-emphasis);
+}
+
+.balance-text {
+    color: var(--bs-primary-text-emphasis);
+}
+
+span {
+    color: var(--bs-primary-text-emphasis);
+}
+
+.balance-span {
+
+}
+
+.main-category-block {
+    padding-top: 100px;
+    padding-left: 60px !important;
+    padding-right: 0 !important;
+}
+
+.title {
+    padding-bottom: 40px;
+    color: var(--bs-primary-text-emphasis);
+}
+
+.cards-items {
+    gap: 20px;
+}
+
+.filter-group {
+    padding: 12px 0 20px;
+    gap: 20px;
+}
+
+.create-form .form-group {
+    margin-bottom: 10px;
+}
+.create-form .form-group:last-child {
+    margin-bottom: 20px;
+}
+
+.create-form .form-group {
+    max-width: 397px;
+}
+
+.expenses {
+    margin-left: 84px;
+}
+
+.income-canvas {
+    margin-right: 84px;
+}
+
+.income h1 {
+    margin-right: 84px;
+}
+
+.diagrams {
+    padding-top: 140px;
+}
+
+.card {
+    width: 22rem;
+}
+
+.user-name {
+    font-size: 14px;
+    word-break: normal;
+}
+
+.user-svg {
+    width: 36px;
+}
+
+.pa__middle-input  {
+    position: relative;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+.pa__middle-input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}
+
+.pa__middle-input::-webkit-inner-spin-button,
+.pa__middle-input::-webkit-clear-button {
+    z-index: -10;
+}
+
+.pa__middle-input::-webkit-input-placeholder {
+    z-index: 99;
+}
+
+.pa__middle-input:placeholder {
+    z-index: 99;
+}
+.pa__middle-input:not(.has-value):before {
+    content: attr(placeholder);
+    width: 100%;
+}
+
+.pa__middle-input  {
+    padding: 12px 20px;
+}
+
+/*--SECOND--*/
+.pa__top-sec {
+    padding: 50px 0;
+}
+.pa__top-title {
+    margin-bottom: 20px;
+    color: #455582;
+    font: 14px "Gilroy-Extrabold", sans-serif;
+}
+.pa__middle-range {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.pa__middle-item {
+    margin-right: 10px;
+}
+.pa__top-sec input[type="date"] {
+    border: 0;
+    padding: 12px 20px;
+    color: #99a2ba;
+    font-size: 14px;
+}
+
+ /*If you need to change calendar icon */
+/* .pa__top-sec input[type="date"]::-webkit-calendar-picker-indicator {*/
+/*  background-image: url("../img/calendar.svg");*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: center center;*/
+/*  background-size: cover;*/
+/*  width: 20px;*/
+/*  height: 20px;*/
+/*} */
+
+.btn-accent {
+    color: #fff;
+    background-color: #ff8007;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/*.btn {*/
+/*    font: 14px "Gilroy-Extrabold", sans-serif;*/
+/*    font-weight: 800;*/
+/*    text-align: center;*/
+/*    padding: 15px 30px;*/
+/*    border-radius: 5px;*/
+/*    text-decoration: none;*/
+/*    border: 0;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.pa__top-sec input[type="date"]:not(:valid):before {*/
+/*    content: attr(placeholder);*/
+/*    width: 100%;*/
+/*    font: 14px "Gilroy-Extrabold", sans-serif;*/
+/*}*/
+
+.has-value {
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.has-value::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}

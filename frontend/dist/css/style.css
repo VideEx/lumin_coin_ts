@@ -1,0 +1,79 @@
+.sidebar {
+    width: 219px;
+}
+
+.form-control {
+    max-width: 397px;
+}
+
+body {
+    color: var(--bs-primary-text-emphasis);
+}
+
+h1 {
+    color: var(--bs-primary-text-emphasis);
+}
+
+.icon-link {
+    font-size: 14px;
+    color: var(--bs-primary-text-emphasis);
+}
+
+.balance-text {
+    color: var(--bs-primary-text-emphasis);
+}
+
+span {
+    color: var(--bs-primary-text-emphasis);
+}
+
+.balance-span {
+
+}
+
+.main-category-block {
+    padding-top: 100px;
+    padding-left: 60px !important;
+    padding-right: 0 !important;
+}
+
+.title {
+    padding-bottom: 40px;
+    color: var(--bs-primary-text-emphasis);
+}
+
+.cards-items {
+    gap: 20px;
+}
+
+.filter-group {
+    padding: 12px 0 20px;
+    gap: 20px;
+}
+
+.create-form .form-group {
+    margin-bottom: 10px;
+}
+.create-form .form-group:last-child {
+    margin-bottom: 20px;
+}
+
+.create-form .form-group {
+    max-width: 397px;
+}
+
+.expenses {
+    margin-left: 84px;
+}
+
+.income-canvas {
+    margin-right: 84px;
+}
+
+.diagrams {
+    padding-top: 140px;
+}
+
+.card {
+    width: 22rem;
+}

@@ -1,0 +1,15 @@
+<h1 class="title">Создание категории доходов</h1>
+
+<form>
+    <div class="form-group pb-3 mb-1">
+        <input type="text" class="form-control" id="category-input" placeholder="Название" autofocus>
+        <div id="valueError" class="d-none invalid-feedback">
+            Вам необходимо ввести название категории!
+        </div>
+        <div id="regexError" class="d-none invalid-feedback">
+            Название некорректное, попробуйте еще раз!
+        </div>
+    </div>
+    <button type="button" class="btn btn-success" id="create-category-btn">Создать</button>
+    <a href="/#/income" class="btn btn-danger">Отмена</a>
+</form>

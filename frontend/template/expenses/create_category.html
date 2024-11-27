@@ -1,0 +1,17 @@
+<h1 class="title">Создание категории расходов</h1>
+
+<form>
+    <div class="form-group pb-3 mb-1">
+        <input type="text" class="form-control" id="category-input"
+               placeholder="Название" autofocus>
+        <div id="valueError" class="invalid-feedback">
+            Вам необходимо ввести название категории!
+        </div>
+        <div id="regexError" class="invalid-feedback">
+            Название некорректное, попробуйте еще раз!
+        </div>
+<!--        <small id="nameError" class="form-text text-danger">Введите название категории</small>-->
+    </div>
+    <button type="submit" class="btn btn-success" id="create-category-btn">Создать</button>
+    <a href="/#/expenses" class="btn btn-danger">Отмена</a>
+</form>

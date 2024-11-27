@@ -1,0 +1,17 @@
+<h1 class="title">Редактирование категории доходов</h1>
+
+<form>
+    <div class="form-group pb-3 mb-1">
+        <input type="text" class="form-control" id="category-input" aria-describedby="nameError"
+               placeholder="Название">
+
+        <div id="valueError" class="d-none invalid-feedback">
+            Вам необходимо ввести название категории!
+        </div>
+        <div id="regexError" class="d-none invalid-feedback">
+            Название некорректное, попробуйте еще раз!
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success" id="save-btn">Сохранить</button>
+    <a href="/#/income" class="btn btn-danger">Отмена</a>
+</form>
