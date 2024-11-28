@@ -76,15 +76,13 @@ export class GetCategories extends Categories {
 
     // удаление категории
     async deleteCategory(categoryId: String | null): Promise<void> {
+
         // @ts-ignore
         const response: CategoriesAllResponseType|DefaultResponseType = await CustomHttp.request(`${config.host}/categories/${this.category}/${categoryId}`, 'DELETE');
 
         if (response as CategoriesAllResponseType) {
-            // @ts-ignore
-            const result = await response.json();
-            console.log(result)
 
-            if (result && !result.error) {
+            if (response as DefaultResponseType) {
                 console.log('Что-то пошло не по плану!')
             }
         }

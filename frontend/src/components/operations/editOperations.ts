@@ -23,6 +23,7 @@ export class EditOperations extends Operations {
     commentInput: HTMLInputElement | null;
     createButton: HTMLInputElement | null;
     editElement: HTMLInputElement | null;
+    canselEditElement: HTMLInputElement | null;
 
     operation;
 
@@ -46,6 +47,8 @@ export class EditOperations extends Operations {
         this.createButton = document.getElementById('createOperation') as HTMLInputElement;
 
         this.editElement = document.getElementById('edit-btn') as HTMLInputElement;
+        this.canselEditElement = document.getElementById('cansel-edit') as HTMLInputElement;
+
 
         const params = window.location.hash.split('?')[1].split('=')[1];
         this.operation = this.getOperation(params);
@@ -53,15 +56,10 @@ export class EditOperations extends Operations {
     }
 
     init() {
-
-
-        // this.typeInput = document.getElementById('inputType');
-        // this.countInput = document.getElementById('inputCount');
-        // this.dateInput = document.getElementById('inputDate');
-        // this.commentInput = document.getElementById('inputComment');
-        // this.editElement = document.getElementById('edit-btn');
-        //
-        // this.categorySelect = document.getElementById('inputCategory')
+        (this.canselEditElement as HTMLInputElement).onclick = () => {
+            // @ts-ignore
+            location.href = '/#/operations'
+        };
 
         const data = this.operation.then(item => {
             item.type === 'income' ? (this.typeInput as HTMLInputElement).value = 'Доход' :  (this.typeInput as HTMLInputElement).value = 'Расход';
@@ -106,6 +104,7 @@ export class EditOperations extends Operations {
         let currentDate = `${newDate.getFullYear()}-${newDate.getMonth()+1}-${newDate.getDate()}`;
 
         try {
+
             // @ts-ignore
             const response: OperationResponseType[]|DefaultResponseType = await CustomHttp.request(`${config.host}/operations/${id}`, 'PUT', {
                 type: this.typeInput?.id,
@@ -117,11 +116,9 @@ export class EditOperations extends Operations {
 
             if (response) {
                 if ((response as OperationResponseType[])) {
-                    // @ts-ignore
-                    const result = await response.json();
 
-                    if (result && !result.error) {
-                        console.log('Что-то пошло не по плану!');
+                    if (response as DefaultResponseType) {
+                        console.log('Что-то пошло не по плану!')
                     }
                 }
             }

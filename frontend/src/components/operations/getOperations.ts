@@ -143,12 +143,10 @@ export class GetOperations extends Operations {
         const response: OperationResponseType|DefaultResponseType = await CustomHttp.request(`${config.host}/operations/${id}`, 'DELETE');
 
         if (response) {
-            if ((response as OperationResponseType)) {
-                // @ts-ignore
-                const result = await response.json();
-                console.log(result)
-            } else {
+            if (response as DefaultResponseType) {
                 console.log('Что-то пошло не по плану!')
+            } else {
+                location.reload();
             }
         }
 
